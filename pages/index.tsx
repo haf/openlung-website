@@ -25,14 +25,14 @@ const Home = () => (
 
       <Link href='/en/i-need-help'>
         <a className='primary-bg'>
-          <h3>I need help &rarr;</h3>
+          <h3>I NEED help &rarr;</h3>
           <p>If you need help building/using the ventilator</p>
         </a>
       </Link>
 
       <Link href='/en/i-can-help'>
         <a className='primary-bg'>
-          <h3>I can help &rarr;</h3>
+          <h3>I CAN help &rarr;</h3>
           <p>If you have skillset or equipment that you think can help</p>
         </a>
       </Link>
