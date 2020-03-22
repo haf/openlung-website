@@ -3,32 +3,17 @@ import Layout from '../components/Layout'
 import Link from 'next/link'
 import QuickNav from '../components/QuickNav'
 
-const Hero = () => (
-  <>
-    <div className="hero">
-      <h1 className="title">Open Field Ventilator / OpenLung</h1>
-      <p className="description">
-        What is your aim today?
-      </p>
-      {/* TODO: language switcher */}
-    </div>
-
-    <style jsx>{`
-      .hero {
-        color: #333;
-      }
-    `}</style>
-    
-    {/* TODO: provide drop-down for the other projects? */}
-
-    {/* TODO: do we port the remainder of the page here? */}
-  </>
-)
+// TODO: provide drop-down for the other projects?
+// TODO: do we port the remainder of the page here?
 
 const Home = () => (
   <Layout hideMenu>
 
-    <Hero />
+    <section>
+      <h1>Open Field Ventilator / OpenLung</h1>
+      <p className="description">What is your aim today?</p>
+      {/* TODO: language switcher */}
+    </section>
 
     <QuickNav>
       <Link href='/en/ventilate-now'>
