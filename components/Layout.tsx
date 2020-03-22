@@ -64,6 +64,10 @@ const Layout: FunctionComponent<LayoutProps> = ({
       `}</style>
 
       <style jsx>{`
+        .layout {
+          margin: 0 auto;
+          max-width: 60em;
+        }
         .layout :global(> *) {
           margin: 0 0.5rem;
         }

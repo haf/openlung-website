@@ -71,7 +71,6 @@ const QuickNav = () => (
       }
 
       .quick-nav {
-        max-width: 880px;
         display: grid;
       }
 
