@@ -36,8 +36,7 @@ export default function QuickNav({ children }: QuickNavProps) {
         .quick-nav :global(> *) {
           border: 1px solid #eee;
           padding: 0.5rem 1rem;
-          margin-top: 1rem;
-          margin-bottom: 5px;
+          margin: 10px 0 0;
         }
 
         @media (min-width: 30em) {
