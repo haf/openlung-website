@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Link from 'next/link'
 
 const Hero = () => (
   <>
@@ -23,31 +24,50 @@ const Hero = () => (
 const QuickNav = () => (
   <>
     <div className='quick-nav'>
-      <a href='/en/ventilate-now'>
-        <h3>Ventilate now &rarr;</h3>
-        <p>You have an urgent need to help someone who's sick</p>
-      </a>
+      <Link href='/en/ventilate-now'>
+        <a className='urgent-bg'>
+          <h3>Ventilate now &rarr;</h3>
+          <p>You have an urgent need to help someone who's sick</p>
+        </a>
+      </Link>
 
-      <a href='/en/i-need-help'>
-        <h3>I can help &rarr;</h3>
-        <p>If you have skillset or equipment that you think can help</p>
-      </a>
+      <Link href='/en/i-need-help'>
+        <a className='primary-bg'>
+          <h3>I need help &rarr;</h3>
+          <p>If you need help building/using the ventilator</p>
+        </a>
+      </Link>
 
-      <a href="/en/COVID-19-resources">
-        <h3>Resources &rarr;</h3>
-        <p>Resources for understanding COVID-19 and building/maintaining ventilators</p>
-      </a>
+      <Link href='/en/i-can-help'>
+        <a className='primary-bg'>
+          <h3>I can help &rarr;</h3>
+          <p>If you have skillset or equipment that you think can help</p>
+        </a>
+      </Link>
 
-      <a href="/en/make-a-ventilator">
-        <h3>Make a ventilator &rarr;</h3>
-        <p>Resources for understanding COVID-19 and building/maintaining ventilators</p>
-      </a>
+      <Link href='/en/COVID-19-resources'>
+        <a className='primary-bg'>
+          <h3>Resources &rarr;</h3>
+          <p>Resources for understanding COVID-19 and building/maintaining ventilators</p>
+        </a>
+      </Link> 
+
+      <Link href='/en/make-a-ventilator'>
+        <a className='primary-bg'>
+          <h3>Make a ventilator &rarr;</h3>
+          <p>Resources for understanding COVID-19 and building/maintaining ventilators</p>
+        </a>
+      </Link>
     </div>
 
     <style jsx>{`
       h1, h2, h3, h4, h5, h6, p {
         margin: 0;
         padding: 0;
+      }
+
+      h3 {
+        margin-bottom: 0.4em;
       }
 
       .quick-nav {
@@ -73,7 +93,7 @@ const QuickNav = () => (
 )
 
 const Home = () => (
-  <Layout>
+  <Layout hideMenu>
     <Hero />
     <QuickNav />
   </Layout>

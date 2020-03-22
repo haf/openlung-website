@@ -2,6 +2,6 @@ import Layout from '../../components/Layout';
 
 export default () => (
   <Layout>
-    <h1>Ventilate now page (en)</h1>
+    <h1>COVID-19 resources page (en)</h1>
   </Layout>
 )

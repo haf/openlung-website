@@ -1,6 +1,7 @@
 import { FunctionComponent, CSSProperties } from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import { primary, urgent } from './colours'
 
 export type LayoutProps = Readonly<{
   title?: string;
@@ -13,7 +14,8 @@ export type LayoutProps = Readonly<{
 const Layout: FunctionComponent<LayoutProps> = ({
   children,
   title = `OpenLung Knowledge App`,
-  style
+  style,
+  hideMenu
 }) => {
   return (
     <div className='layout' style={style}>
@@ -23,7 +25,7 @@ const Layout: FunctionComponent<LayoutProps> = ({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <Nav />
+      {hideMenu ? null : <Nav />}
 
       {children}
 
@@ -32,33 +34,37 @@ const Layout: FunctionComponent<LayoutProps> = ({
           box-sizing: border-box;
         }
 
+        body {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
+        }
+
         a {
           color: rgb(76, 154, 208);
           text-decoration: none;
         }
-        a:hover, a:visited, a:active {
-          color: inherit
-        }
 
         .urgent {
-          color: rgb(205, 99, 109)
+          color: ${urgent}
         }
 
         .urgent-bg {
-          background-color: rgb(205, 99, 109)
+          color: white;
+          background-color: ${urgent}
         }
 
         .primary {
-          color: rgb(76, 154, 208);
+          color: ${primary};
         }
 
         .primary-bg {
-          background-color: rgb(76, 154, 208);
+          color: white;
+          background-color: ${primary};
         }
       `}</style>
 
       <style jsx>{`
-        .layout > :global(*) {
+        .layout :global(> *) {
           margin: 0 0.5rem;
         }
       `}</style>
