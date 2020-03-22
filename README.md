@@ -1,4 +1,4 @@
-# OpenLung web app
+# OpenLung web app / site
 
 This is the repo for the OpenLung website / app. It's build as a progressive web app,
 so it works offline, and is focused on providing support for people looking to create,

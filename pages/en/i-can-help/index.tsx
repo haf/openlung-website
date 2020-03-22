@@ -1,6 +1,6 @@
-import Layout from '../../components/Layout';
+import Layout from '../../../components/Layout';
 import Link from 'next/link';
-import QuickNav from '../../components/QuickNav';
+import QuickNav from '../../../components/QuickNav';
 
 export default () => (
   <Layout>
@@ -12,7 +12,7 @@ export default () => (
       <Link href='/en/i-can-help/medical-expertise'>
         <a className='urgent-bg'>
           <h3>Medical expertise &rarr;</h3>
-          <p>Volunteer</p>
+          <p>Be available to answer questions, provide guidance and ensure the ventilator is as safe as possible.</p>
         </a>
       </Link>
 
@@ -23,13 +23,14 @@ export default () => (
         </a>
       </Link>
 
-      <Link href='/en/i-can-help/communications'>
+      <Link href='/en/i-can-help/education'>
         <a className='primary-bg'>
-          <h3>Translations and copywriting &rarr;</h3>
+          <h3>Education &rarr;</h3>
           <p>Can you help us produce ventilators or improve our design?</p>
         </a>
       </Link>
 
+      <div className='spacer'>More to come...</div>
     </QuickNav>
 
   </Layout>

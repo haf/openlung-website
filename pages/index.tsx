@@ -23,9 +23,11 @@ const Home = () => (
         </a>
       </Link>
 
+      <hr className='spacer' />
+
       <Link href='/en/i-need-help'>
         <a className='primary-bg'>
-          <h3>I NEED help &rarr;</h3>
+          <h3>HELP ME &rarr;</h3>
           <p>If you need help building/using the ventilator</p>
         </a>
       </Link>
