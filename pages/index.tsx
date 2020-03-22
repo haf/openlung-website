@@ -19,7 +19,7 @@ const Home = () => (
       <Link href='/en/ventilate-now'>
         <a className='urgent-bg'>
           <h3>Ventilate now &rarr;</h3>
-          <p>You have an urgent need to help someone who's sick</p>
+          <p>How to use a ventilator on a patient</p>
         </a>
       </Link>
 
