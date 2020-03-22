@@ -48,6 +48,10 @@ export default function QuickNav({ children }: QuickNavProps) {
             grid-template-columns: 1fr 1fr;
             grid-column-gap: 1em;
           }
+
+          .quick-nav :global(.spacer) { 
+            display: none;
+          }
         }
       `}</style>
     </>
