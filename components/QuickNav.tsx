@@ -39,6 +39,10 @@ export default function QuickNav({ children }: QuickNavProps) {
           margin: 10px 0 0;
         }
 
+        .quick-nav :global(> .spacer) {
+          border: none;
+        }
+
         @media (min-width: 30em) {
           .quick-nav {
             grid-template-columns: 1fr 1fr;

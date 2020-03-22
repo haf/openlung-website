@@ -37,6 +37,8 @@ const Home = () => (
         </a>
       </Link>
 
+      <hr className='spacer'/>
+
       <Link href='/en/COVID-19-resources'>
         <a className='primary-bg'>
           <h3>Resources &rarr;</h3>
