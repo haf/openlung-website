@@ -18,6 +18,10 @@ const Hero = () => (
         color: #333;
       }
     `}</style>
+    
+    {/* TODO: provide drop-down for the other projects? */}
+
+    {/* TODO: do we port the remainder of the page here? */}
   </>
 )
 
