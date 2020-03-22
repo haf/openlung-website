@@ -6,7 +6,7 @@ const Nav = () => (
     <ul>
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a className='primary-bg'>⏪ Back</a>
         </Link>
       </li>
     </ul>
@@ -20,16 +20,13 @@ const Nav = () => (
         justify-content: space-between;
       }
       nav > ul {
-        padding: 4px 16px;
+        padding: 0;
       }
       li {
         display: flex;
-        padding: 6px 8px;
       }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
+      li a {
+        padding: 6px 8px;
       }
     `}</style>
   </nav>

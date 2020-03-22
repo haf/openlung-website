@@ -1,14 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import QuickNav from '../components/QuickNav'
 
 const Hero = () => (
   <>
     <div className="hero">
-      <h1 className="title">OpenLung</h1>
+      <h1 className="title">Open Field Ventilator / OpenLung</h1>
       <p className="description">
         What is your aim today?
       </p>
+      {/* TODO: language switcher */}
     </div>
 
     <style jsx>{`
@@ -19,11 +21,12 @@ const Hero = () => (
   </>
 )
 
-// Docs https://docs.google.com/document/d/1PASe9sHr4ODx-acC9fBW3cc62IMoWSGu1QQY54VQ-RE/edit
+const Home = () => (
+  <Layout hideMenu>
 
-const QuickNav = () => (
-  <>
-    <div className='quick-nav'>
+    <Hero />
+
+    <QuickNav>
       <Link href='/en/ventilate-now'>
         <a className='urgent-bg'>
           <h3>Ventilate now &rarr;</h3>
@@ -58,43 +61,7 @@ const QuickNav = () => (
           <p>Resources for understanding COVID-19 and building/maintaining ventilators</p>
         </a>
       </Link>
-    </div>
-
-    <style jsx>{`
-      h1, h2, h3, h4, h5, h6, p {
-        margin: 0;
-        padding: 0;
-      }
-
-      h3 {
-        margin-bottom: 0.4em;
-      }
-
-      .quick-nav {
-        display: grid;
-      }
-
-      .quick-nav > * {
-        border: 1px solid #eee;
-        padding: 0.5rem 1rem;
-        margin-top: 1rem;
-        margin-bottom: 5px;
-      }
-
-      @media (min-width: 30em) {
-        .quick-nav {
-          grid-template-columns: 1fr 1fr;
-          grid-column-gap: 1em;
-        }
-      }
-    `}</style>
-  </>
-)
-
-const Home = () => (
-  <Layout hideMenu>
-    <Hero />
-    <QuickNav />
+    </QuickNav>
   </Layout>
 )
 
