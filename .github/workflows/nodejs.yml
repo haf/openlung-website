@@ -18,7 +18,6 @@ jobs:
       with:
         node-version: '10.x'
     - run: yarn install
-    - run: yarn build
     - run: yarn ci
       env:
         CI: true

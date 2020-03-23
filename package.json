@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "cypress run --config video=false",
-    "ci": "yarn start & wait-on http://localhost:3000 && yarn test"
+    "ci": "yarn dev & wait-on http://localhost:3000 && yarn test"
   },
   "dependencies": {
     "next": "9.3.1",
