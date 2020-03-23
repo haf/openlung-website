@@ -27,3 +27,7 @@ yarn-error.log*
 # next-pwa
 public/sw*
 public/workbox*
+
+# cypress
+cypress/videos
+cypress/screenshots
