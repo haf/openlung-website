@@ -29,4 +29,5 @@ public/sw*
 public/workbox*
 
 # cypress
-cypress/videos*
+cypress/videos
+cypress/screenshots

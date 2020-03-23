@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "cypress run --config video=false",
-    "ci": "yarn dev & wait-on http://localhost:3000 && yarn test"
+    "ci": "concurrently --success first --kill-others \"yarn dev\" \"wait-on http://localhost:3000 && yarn test\""
   },
   "dependencies": {
     "next": "9.3.1",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/node": "^13.9.3",
     "@types/react": "^16.9.25",
+    "concurrently": "^5.1.0",
     "cypress": "^4.2.0",
     "next-pwa": "^2.3.1",
     "typescript": "^3.8.3",
