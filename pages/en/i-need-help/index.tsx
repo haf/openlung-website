@@ -8,14 +8,14 @@ export default () => (
 
     <QuickNav>
       <Link href='/en/i-need-help/finding-medical-guidance'>
-        <a className='urgent-bg'>
+        <a className='urgent-bg' data-cy='finding-medical-guidance'>
           <h3>Medical guidance &rarr;</h3>
           <p>Guidance on how to use a ventilator or find care for a critically ill patient.</p>
         </a>
       </Link>
 
       <Link href='/en/i-need-help/finding-a-ventilator'>
-        <a className='primary-bg'>
+        <a className='primary-bg' data-cy='finding-a-ventilator'>
           <h3>Finding a ventilator &rarr;</h3>
           <p>How to find a ventilator that someone has built.</p>
         </a>
@@ -23,14 +23,14 @@ export default () => (
 
 
       <Link href='/en/i-need-help/mechanical-engineering'>
-        <a className='primary-bg'>
+        <a className='primary-bg' data-cy='mechanical-engineering'>
           <h3>Partner with a maker &rarr;</h3>
           <p>Making a ventilator requires some general equipment. Find someone to help you out.</p>
         </a>
       </Link>
 
       <Link href='/en/i-need-help/becoming-a-maker'>
-        <a className='primary-bg'>
+        <a className='primary-bg' data-cy='becoming-a-maker'>
           <h3>Become a maker &rarr;</h3>
           <p>How to level up your skills quickly</p>
         </a>

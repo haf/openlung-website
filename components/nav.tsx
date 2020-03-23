@@ -8,7 +8,7 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <a onClick={navigateBack} className='button primary-bg'>⏪ Back</a>
+          <a onClick={navigateBack} className='button primary-bg' data-cy='back'>⏪ Back</a>
         </li>
 
         <li>
