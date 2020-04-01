@@ -10,7 +10,7 @@
     "ci": "concurrently --success first --kill-others \"yarn dev\" \"wait-on http://localhost:3000 && yarn test\""
   },
   "dependencies": {
-    "next": "9.3.1",
+    "next": "9.3.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
